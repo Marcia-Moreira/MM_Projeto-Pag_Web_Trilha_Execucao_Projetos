@@ -1,0 +1,54 @@
+
+IMPORTANTE
+
+Criar Página principal com Botôes com Títulos que levam para outra página html com detalhes e orientações de execução de rotinas para dar andamento a projetos
+
+DESCOBRIR o melhor fluxo das tarefas e organizar os botões em ordem de fluxo como Organograma!!!
+
+fazer modelo de cabeçalho da Marcia Moreira no HTML:
+
+criar HTML padrão para este projeto, tipo com navbar e rodapé padrão. Ver se faz com % a partir da página index.
+
+Cada caixadeve ser um botão que leva pra outra página html
+
+Na principal deve haver apenas as de Negrito e apertando botão deve aparecer outra pagina com detalhes do que fazer
+
+verificar uma planilha que eu fiz no Google colocar link e explicações Práticas inclusive o Mapa Mental
+
+criar páginas com detalhes de instalações e ou rotinas e dicas de dia a dia para gerar projetos
+
+Olhar a planilha que eu havia criado um tempo passado
+Olhar o Mapa Mental que recebi
+
+Identificar as demais ferramentas que já sei e quando usalas
+Identificar as sequencias de ferramentas apropriadas
+
+Criar um README bacana
+
+
+-Ambiente Virtual
+-Procedimentos do GIT 
+-Procedimentos GitHub
+-Metodologia SCRUM
+-Criar Trello de Tarefas conforme SCRUM
+-Definir as Tarefas
+-Definir as Reuniões
+-Definir as Entregas (O que será entregue)
+- Coleta de Feedbakcs
+
+-Banco de Dados
+-Tabelas de DB
+-Ferramentas de DB
+
+-Produção
+-O que precisa para produção?
+
+
+
+----------
+
+Estudos Necessários:
+
+como posicionar os botões
+
+Fazer Pontes/ancoras ou uma única página descendo?
