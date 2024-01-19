@@ -1,6 +1,8 @@
 
 IMPORTANTE
 
+pÔR LEGENDAS DOS PROJETOS PERTO DOS BOTOES tipo coloque link do canva ou defina o nome de xyz!!
+
 Criar Página principal com Botôes com Títulos que levam para outra página html com detalhes e orientações de execução de rotinas para dar andamento a projetos
 
 DESCOBRIR o melhor fluxo das tarefas e organizar os botões em ordem de fluxo como Organograma!!!
@@ -52,3 +54,41 @@ Estudos Necessários:
 como posicionar os botões
 
 Fazer Pontes/ancoras ou uma única página descendo?
+
+https://github.com/Marcia-Moreira/MM_Projeto-Pag_Web_Trilha_Execucao_Projetos
+
+
+CONTEÚDOS NO SITE:
+
+
+----------------------------------------
+NO CSS:
+
+escrever os padrões do css mais comuns:
+
+main x backgroud 
+main x codigos que tem que zerar por padrão de posicionamento
+classes
+Id 
+
+como posicionar ao centro
+padrão de links...
+
+--------------------------------
+NO HTML:
+
+Tabelas 
+links
+Imagens
+
+
+
+----------------------------
+ROTA Paython
+
+
+
+------------------------
+Ambiente Virtual VENV
+
+como rodar VENV no VSCode

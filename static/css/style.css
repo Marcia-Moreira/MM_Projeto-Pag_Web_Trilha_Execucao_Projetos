@@ -1,0 +1,119 @@
+/* Rever */
+
+/* ! ============================================== */
+/* ! CORES DO PROJETO: */
+
+.cores {
+    /* Descobrir os Códigos das cores # */
+    color: black;
+    color: gray;
+    color: white;
+}
+
+/* ! ============================================== */
+/* ! PADRONIZAÇÃO CSS PRINCIPAL: */
+
+* {
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+main {
+    font-size: 12px;
+    color: white;
+}
+
+/* ! ============================================== */
+/* ! PÁGINAS: */
+
+.pagina{
+    background-color: gray;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.pag_principal {
+    font-size: 15px;
+}
+
+.fundo_branco {
+    font-size: 12px;
+}
+
+/* ! ============================================== */
+/* ! TRILHAS DE ASSUNTOS: */
+
+.trilha_01{
+    font-size: 12px;
+} 
+
+.trilha_02{
+    font-size: 12px;
+}
+
+.trilha_03{
+    font-size: 12px;
+}
+
+/*! ============================================== */
+/* ! BOTÕES: */
+
+.btn {
+    background-color: black;
+    font-size: 12px;
+    color: gray;
+    border-color: gray;
+    border-radius: 5px;
+}
+
+.btn_matriz {
+    background-color: black;
+    font-size: 12px;
+    color: white;
+    border-color: gray;
+    border-radius: 5px;
+}
+
+.btn_secundario {
+    background-color: gray;
+    font-size: 12px;
+    color: black;
+    border-color: black;
+    border-radius: 5px;
+}
+
+
+
+
+/*! ============== ================================ */
+/* ! TEXTOS EXPLICATIVOS: */
+/* Escrever de preto com fundo branco para facilitar copias e colar */
+
+/*! ============================================== */
+/* ! QUADROS DOS TEXTOS EXPLICATIVOS: */
+/* Tentar fazer esbranquiçado */
+
+
+/*! ============================================== */
+/* ! : */
+
+/*! ============================================== */
+/* ! : */
+
+/*! ============================================== */
+/* ! : */
+
+/*! ============================================== */
+/* ! : */
+
+/*! ============================================== */
+/* ! : */
+
+/*! ============================================== */
+/* ! : */
+
