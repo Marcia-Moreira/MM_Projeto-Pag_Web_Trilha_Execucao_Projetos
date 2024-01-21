@@ -1,4 +1,18 @@
-/* Rever */
+/* 
+*=========================================================================================
+
+?   PROJETO ->> Desenvolvimento WEB Full Stack: Minha Trilha para Execução de
+?   Projetos
+?   OBJETIVO ->> Página para unir visualmente as etapas de projetos web por 
+?   links e botões.
+?   CRIAÇÃO E DESENVOLVIMENTO ->> Marcia Moreira
+?   DATA DA CRIAÇÃO ->> 10/01/2024
+?   MEU GITHUB ->> https://github.com/Marcia-Moreira
+?   MEU LINK WAKATIME ->> https://wakatime.com/@Marcia_Moreira
+?   MEU LINKEDIN ->> https://www.linkedin.com/in/marciamoreiramm
+
+*======================================================================================== 
+*/
 
 /* ! ============================================== */
 /* ! CORES DO PROJETO: */
@@ -14,78 +28,141 @@
 /* ! PADRONIZAÇÃO CSS PRINCIPAL: */
 
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
     background-color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     color: white;
 }
 
+body {
+    background-color: yellow;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
 main {
-    font-size: 12px;
-    color: white;
+    background-color: rgb(209, 206, 206);
+    font-size: 20px;
+    color: black;
+    border-radius: 10px;
+    border-radius: 10px;
 }
 
 /* ! ============================================== */
 /* ! PÁGINAS: */
 
 .pagina{
-    background-color: gray;
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 20px;
-    border-radius: 10px;
+    background-color: white;
+    /* padding-top: 20px; */
+    /* padding-left: 40px; */
+    /* padding-right: 40px; */
+    /* padding-bottom: 20px; */
+    
 }
 
 .pag_principal {
     font-size: 15px;
+    background-color: aquamarine;
 }
 
 .fundo_branco {
     font-size: 12px;
+    background-color: white;
 }
 
 /* ! ============================================== */
 /* ! TRILHAS DE ASSUNTOS: */
 
-.trilha_01{
-    font-size: 12px;
-} 
+a.funcao_principal div a {
+    font-size: 20px;
+    /* padding: auto; */
 
-.trilha_02{
-    font-size: 12px;
+    /* display: flex; */
+    justify-content: center;
+    margin-top: 10px;
+    width: 200px;
 }
 
-.trilha_03{
+div.trilha_01 div a {
     font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+} 
+
+div.trilha_02 div a {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.trilha_03 div a {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.trilha_04 div a {
+    font-size: 12px;
+    display: flex;
+    /* display: flexbox; */
+    justify-content: space-around;
+    width: 20vw;
 }
 
 /*! ============================================== */
 /* ! BOTÕES: */
 
-.btn {
-    background-color: black;
-    font-size: 12px;
-    color: gray;
-    border-color: gray;
+.btn,
+.btn_matriz,
+.btn_secundario {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+
+    background-color: gray;
+    border-style: solid;
+    border-color: white;
     border-radius: 5px;
+
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.btn_matriz {
+
+
+
+
+
+
+
+/* .btn_matriz {
     background-color: black;
-    font-size: 12px;
+    font-size: 20px;
     color: white;
     border-color: gray;
     border-radius: 5px;
-}
+    padding: 20px;
+} */
 
-.btn_secundario {
+/* .btn_secundario {
     background-color: gray;
-    font-size: 12px;
+    font-size: 20px;
     color: black;
     border-color: black;
     border-radius: 5px;
-}
+    padding: 20px;
+} */
 
 
 

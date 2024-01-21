@@ -1,0 +1,227 @@
+/* 
+*=========================================================================================
+
+?   PROJETO ->> Desenvolvimento WEB Full Stack: Padrões de Código CSS
+?   OBJETIVO ->> Página para ajudar a padronizar páginas com css.
+?   CRIAÇÃO E DESENVOLVIMENTO ->> Marcia Moreira
+?   DATA DA CRIAÇÃO ->> 20/01/2024
+?   MEU GITHUB ->> https://github.com/Marcia-Moreira
+?   MEU LINK WAKATIME ->> https://wakatime.com/@Marcia_Moreira
+?   MEU LINKEDIN ->> https://www.linkedin.com/in/marciamoreiramm
+
+*======================================================================================== 
+*/
+
+/* Modelo Padrão CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+a {
+    /* Zera a decoração padrão dos links*/
+   text-decoration: none;
+   cursor: pointer; 
+}
+
+.cores {
+    color: black;
+    color: white;
+}
+
+p {
+    color: #000000;
+}
+
+/* ====================================================== */
+
+.classes {
+    color: white;
+}
+
+#id {
+    color: white;
+}
+
+/* ====================================================== */
+
+/* quadro_1 quadro_2 quadro_3 */
+/* quadrinho_a quadrinho_b quadrinho_c */
+
+.quadro_1 {
+    background-color: #000000;
+    width: 800px;
+    height: 600px;
+}
+
+.quadro_1 .quadrinho_a {
+    background-color: brown;
+    width: 100px;
+    height: 80px;
+}
+
+/* ====================================================== */
+
+.conteudo {
+   color: red;
+}
+
+.conteudo p {
+    color: pink;
+}
+
+/* ====================================================== */
+
+a {
+    color: greenyellow;
+}
+
+a:hover {
+    color: green;
+}
+
+a:visited {
+    color: green;
+}
+
+a:focus {
+    color: green;
+}
+
+a:active {
+    color: green;
+}
+
+/* ====================================================== */
+/* Bloco de Textos */
+
+.bloco_de_texto {
+    text-decoration: underline;
+    color: aqua;
+    font-size: medium;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    text-align: center;
+}
+
+/* ====================================================== */
+/* Margens e Bordas */
+
+.margem_externa {
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.borda_interna {
+    border-top: 10px;
+    border-right: 15px;
+    border-bottom: 10px;
+    border-left: 15px;
+}
+
+.padding {
+    /* rever */
+    padding-top: 10px;
+}
+/* ====================================================== */
+/* Background */
+
+.conteudo .cor_solida {
+    background-color: green;
+}
+
+.conteudo .image {
+    background-image: url('img/bg.jpg');
+    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* posição vertical e horizontal */
+    background-position: 10px -20px;
+    background-size: 100%;
+    /* largura x altura */
+    background-size: 100% auto;
+}
+
+
+/* ====================================================== */
+/* Propriedade Display */
+
+/* Display Block = -> Nível de bloco indica quebra de linha logo abaixo de outro bloco */
+.conteudo .display_block {
+    display: block;
+    width: 800px;
+    height: 600px;
+    background-color: cadetblue;
+}
+
+/* Display INLINE -- -> conteúdo em mesma linha */
+
+.conteudo .display_inline {
+    display: inline;
+    color: #000000;
+}
+
+header .menu ul li {
+    display: inline;
+    color: black;
+}
+
+/* ====================================================== */
+
+/* Pesquisar a diferença entre o isibility e display - não entendi nada  */
+
+
+/* ====================================================== */
+/* Propriedade Float -> permite que um elemento flutue e o resto esteja ao seu entorno flutuando */
+
+.produto .produto_imagem {
+    float: left;
+}
+
+.produto .produto_descricao {
+    float: right;
+}
+
+/* erda do pai: inherit */
+
+.produto {
+    float: left;
+}
+.produto .produto_imagem {
+    float: inherit;
+}
+
+/* Quebra de linha do FLOAT - CLEAR both */
+/* Após as definições de float anteriores indicando que esse vai para baixo de quem está flutuando*/
+.produto .preco {
+    clear: both;
+}
+
+/* ====================================================== */
+/* Propriedade Position - usa-se para pequenos elementos */
+/* Para posicionar Blocos - usa-se float e flexbox */
+
+.position {
+    position: static;
+    position: relative;
+    position: absolute;
+    position: fixed;
+}
+
+
+/* parei na pagina 55 do css */
+
+/* ====================================================== */
+
+
