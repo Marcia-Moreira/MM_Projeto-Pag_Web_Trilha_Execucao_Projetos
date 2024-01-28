@@ -15,6 +15,13 @@
 /* Link de Site Padronização CSS */
 /* https://www.w3schools.com/ */
 
+/* Modelo RESET CSS - Zera a Página Toda */
+
+/* Criar arquivo na Pasta para Zerar os códigos padrões css, tem que colocar o link no html antes do seu arquivo css!!! */
+/* https://meyerweb.com/eric/tools/css/reset/reset.css */
+
+
+
 /* Modelo Padrão CSS */
 
 * {
@@ -228,3 +235,12 @@ header .menu ul li {
 /* ====================================================== */
 
 
+/* 
+
+Em vez de px, em, rem ou pt utilizaremos vh e vw
+
+vh: view height, ou seja, a altura da view (tela) do usuário;
+vw: view width, ou seja, a largura total da view (tela) do usuário;
+
+
+*/
