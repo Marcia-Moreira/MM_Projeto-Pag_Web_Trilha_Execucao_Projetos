@@ -100,3 +100,14 @@ ROTA Paython
 Ambiente Virtual VENV
 
 como rodar VENV no VSCode
+
+
+
+-----------------
+Diversos
+
+Links Sites para Baixar png de botões
+
+links sites para baixar badges em link e fazer as mais usadas por mim
+
+Modelo de arquivos normalize.css e reset.css 
