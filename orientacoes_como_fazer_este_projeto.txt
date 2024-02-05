@@ -108,6 +108,10 @@ Diversos
 
 Links Sites para Baixar png de botões
 
+https://fontawesome.com/icons/categories/coding
+
+
+
 links sites para baixar badges em link e fazer as mais usadas por mim
 
 Modelo de arquivos normalize.css e reset.css 
