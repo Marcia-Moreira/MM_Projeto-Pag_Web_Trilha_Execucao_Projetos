@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <p>
+            Docker Hub 
+            Logada com Conta GitHub 
+            Usuario - marciamoreira
+            Senha - Mm@1331228113
+
+            Docker x SQL (Criar Imagem de Banco de Dados)
+            https://hub.docker.com/  
+
+            Docker  Hub- Loguei com conta GitHub
+            
+            Usuário Docker Hub - marciamoreira
+            E-mail - mm.no.linkedin@gmail.com
+            Senha GitHub - Mm@133122811381
+
+            Comandos Terminal - Para Criar Imagem no Docker 
+
+        </p>
+        <p>
+            <a href="https://www.youtube.com/watch?v=3DWCRVxmFuY">Link da Aula</a>
+
+            - Comandos Docker Container no Terminal:
+            - Listar os Containers -> docker container ps 
+            - Inspencionar Container -> docker container inspect Iad (3 primeiras letras do ID do container a ser inspencionado)
+            - clear -> para limpar a tela 
+            - Listar Todos os Container Ativos ou Não -> docker container ps -a
+            - Remover containers -> docker container rm -f 
+            rm(remove) -f(force)
+            - Para testar se apagou mesmo -> docker container ps -a
+            - clear -> para limpar a tela
+            - Para se localizar no terminal -> pwd 
+            - Para Listas as pastas -> ls 
+            * Precisa saber em qual pasta estão o que vc precisa trabalhar!
+            - Para entrar na pasta pretendida -> cd nome da pasta/ 
+            - Para entrar direto numa pasta e listar -> /nomeDaPasta ls 
+            - ? -> /nomeDaPasta cd Dockerfile.MySql/ 
+            - ls
+            (docker-compose.yml) que tem informações de versão , senha, porta, data-base...(identação de dois espaços e não tab)
+            - Ainda dentro do DockerFile...-> docker-compose up (irá baixar a imagem)
+
+            - Admin -> do MySQL
+
+            - 
+
+        </p>
+
+        <p>
+            <a>Link Aula Terminal x Docker</a>
+
+            - VMs (Máquinas Virtuais)
+            - VPSs Virtual Priveti Service 
+
+            - Software em Container -> Para não gastar recursos extras como nas VMs com estruturas muito complexas e grandes.
+
+            - Usa recursos da própria máquina original sem precisar de VMs
+
+            - Docker é uma Skill 
+
+            - Ubuntu Server (já instala o docker)
+
+            - No Terminal Ubuntu:
+            - sudo apt install docker.io docker-compose 
+            - sudo systemctl enable --now docker docker.socket containerd
+            - docker --help (menu ajuda)
+
+            -> Docker Hub 
+
+            -> docker images 
+            -> docker run --name meu_wordpress -p 8080:80 -d wordpress 
+            lista os containers executando -> docker ps 
+            ->
+
+            - lista todos os containers -> docker ps -a  
+            - com docker parado pode excluir -> docker rm idDoContainer (mas a imagem continua)
+
+            - Para remover a Imagem -> docker rmi ubuntu
+            (Melhor não remover imagens que tenham container ativos, melhor remover os containers primeiro e depois a imagem!!!)
+
+        </p>
+        <p>
+            <a href="https://www.youtube.com/watch?v=01MR38eDXz8">Aula Visual</a>
+
+            -VSCode - instalar as extenções 
+             1- DataBase Client
+             2- extenção Docker
+             3- extensão WSL (simula Ubuntu e Linux no terminal)
+
+            - Entrar no ícone da Extensão do Danco de Dados (DataBase Client instalada) para "criar conexão com banco de dados sqlite/mysql"
+
+            - docker hub é um repositório com as imagens oficiais dos bancos de dados -> copie o codigo
+
+            <a href="https://hub.docker.com/_/mysql"> Página com a Imagem Oficial MySQL</a>
+            <p>docker pull mysql</p>
+
+            - O Docker desktop deve ser instalado na sua máquina
+
+            - dentro do link acima, tem os comandos em terminal para criar a "imagem" no nosso computador
+
+            - dentro do VSCode / DataBase / Terminal WSL Ubunto 
+
+            -> docker run --name mysql_container_01 -e MYSQL_ROOT_PASSWORD=root mysql:5.7 
+            -> execute (ele deve instalar a imagem do docker hub e vai travar esse terminal.)
+
+            -> CORRETO especificando as PORTAS (meu computador x container) ->             -> docker run --name mysql_container_01 -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -d  mysql:5.7 
+            (o primeiro 3306 pode ser qualquer porta da minha máquina, o -d é pra que ele fique rodando em background sem travar o terminal)
+
+            (no mysql precisa passar senha de usuario root na variavel de ambiente) 
+            <!-- 
+                docker run --name mysql_container_01 -e MYSQL_ROOT_PASSWORD=root mysql:5.7
+                Unable to find image 'mysql:5.7' locally
+                5.7: Pulling from library/mysql
+                20e4dcae4c69: Pull complete
+                1c56c3d4ce74: Pull complete...
+            -->
+
+            -> abra outro terminal (+ split terminal)para verificar se está instalado mesma a imagem -> docker ps  (Para listar as imagens ativas. Deverá aparecer dados da imagem criada) 
+
+            <!-- 
+                marcia_moreira@Galaxy-Book-MM-13062023:/mnt/c/Projetos_MM/MM_Projeto-Pag_Web_Trilha_Execucao_Projetos$ docker ps
+                CONTAINER ID   IMAGE       COMMAND                  CREATED         STATUS         PORTS                 NAMES
+                e0db1a2e6a8e   mysql:5.7   "docker-entrypoint.s…"   5 minutes ago   Up 5 minutes   3306/tcp, 33060/tcp   mysql_container_01
+             -->
+
+             - Agora na extensão do Docker VSCode, conseguimos visualizar o Container fora do Terminal e inclusive sua imagem
+
+             - Para parar a execução do Container -> docker stop e0db (inicial do id da img ou o nome que demos)
+
+             - Para Listar e conferir a interrupção -> docker ps (ele só foi parado e não removido)
+             <!-- 
+                ecucao_Projetos$ docker ps
+                CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+              -->
+
+             - Para listar TODOS container (ativos e parados) -> docker ps -a  
+             <!-- 
+                ecucao_Projetos$ docker ps -a
+                CONTAINER ID   IMAGE       COMMAND         
+                CREATED          STATUS           
+                            PORTS     NAMES
+                e0db1a2e6a8e   mysql:5.7   "docker-entrypoint.s…"   18 minutes ago   Exited (0) About a minute ago             mysql_container_01
+              -->
+
+              - Para Reiniciar um Container -> docker start e0db (id ou nome)
+
+              - ou na extenção docker/ containers/ clique botao D / start (então ja tem uma sql rodando no db)
+
+              - Tentar fazer a conexão com o Banco de Dados (na extensão dataBase) - Connect to server
+
+              - excluir o container (a Imagem Não será excluida, apenas o container mas ele deve estar parado para ser excluído) -> docker rm e0db
+
+        </p>
+    </main>
+    
+</body>
+</html>
