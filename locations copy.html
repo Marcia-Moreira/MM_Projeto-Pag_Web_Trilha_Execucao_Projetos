@@ -1,0 +1,30 @@
+{% extends 'layout.html' %} {% block content %}
+<div class="container mt-5">
+<!-- <div class="row"> -->
+    <h1>Localizações</h1>
+
+    <!-- Tentei e não consegui - errado  -->
+    <div>
+        "id": 1,
+        "name": "Earth",
+        "type": "Planet",
+        "dimension": "Dimension C-137",
+    </div>
+    <ul class="list-group">
+        {% for location in locations %}
+        <li class="list-group-item"><a href="{{ url_for('get_location', id=location_data.id) }}">{{ location_data.name }}</a></li>
+        {% endfor %}
+    </ul>
+
+
+    <ul class="list-group">
+        {% for location in locations %}
+        <li class="list-group-item"><a href="{{ url_for('get_location', id=location.id) }}">{{ location.name }}</a></li>
+        {% endfor %}
+    </ul>
+    <p>
+        <a href="/location/{{location.id}}" class="btn btn-primary">Ver detalhes</a>
+    </p>
+
+</div>
+{% endblock %}
